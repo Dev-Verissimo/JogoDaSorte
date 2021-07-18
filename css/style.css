@@ -1,0 +1,178 @@
+:root{
+    --font-titulo1:'Tourney', cursive;
+    --font-titulojogo: 'Rajdhani', sans-serif;
+    --font-restante: 'Staatliches', cursive;
+
+    --color-principal: #f72585;
+    --color-second: #ffba08;
+    --colorForLetters: #03071e;
+}
+
+
+
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;  
+}
+
+html{
+    min-height: 100vh;
+}
+/* ----------inicio da primeira tela--------------- */
+
+#abertura{
+    background-color: var(--color-second);
+    color: var(--colorForLetters);
+    font-family: var(--font-restante);
+
+    min-height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+    transition-delay: 2s;
+
+    
+}
+main{
+    /* display: none; */
+    position: absolute;
+    top: 0;
+    transition: all 2s;
+}
+
+
+
+h1{
+    font-family: var(--font-titulo1);
+    font-size: 60px;
+    color: #f72585;
+    
+
+    /* padding-bottom: px; */
+}
+
+#abertura button{
+    border: none;
+    border-radius: 4px;
+
+    width: 200px;
+    height: 40px;
+
+    background-color: var(--colorForLetters);
+
+    font-size: large;
+    font-family: var(--font-titulojogo);
+    color: var(--color-principal);
+
+}
+
+#abertura button:hover{
+
+}
+
+
+#abertura p{
+    padding-top: 50px;
+}
+/*----------fim da primeira tela ------------------- */
+
+/*---------segunda tela ----------------------------------- */
+
+#outra{
+    min-height: 100vh;
+    background-color: var(--color-principal);
+    
+}
+
+#oponentes {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+#oponentes img{
+    width: 70px;
+}
+
+
+#oponentes .adversarios{
+    height: 120px;
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    margin: 0 auto;
+    
+}
+#oponentes .adversarios:first-child{
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+#oponentes .adversarios:last-child{
+    /* position: absolute;
+    bottom: 0; */
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+
+#usuario{
+    /* align-self: flex-end; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#usuario img{
+    cursor: help;
+}
+
+
+/*  versus */
+#versus{
+    color: #ffba08;
+    font-size: 70px;
+    font-family: var(--font-titulojogo);
+
+    text-align: center;
+    margin: 0 auto;
+}
+
+/*  versus */
+
+
+.result > img{
+    display: none;
+}
+
+
+#fim{
+    display: flex;
+    align-content: center;
+    flex-flow: row wrap;
+    position: absolute;
+    z-index: -1;
+    text-align: center;
+    justify-content: center;
+    top: 0;
+
+    background-color: #03071e;
+    color: #ffba08;
+    width: 100%;
+    min-height: 110vh;
+}
+
+.nome{
+    font-size: 20px;
+    margin: 0;
+     /* padding-left: 13px; */
+     max-width: 100px;
+}
