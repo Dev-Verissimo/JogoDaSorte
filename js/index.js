@@ -144,7 +144,7 @@ function contador() {
         console.log("fim")
         telafinal.style.display = 'flex'
         telafinal.style.zIndex = 2
-        ontouchstart.style.display = 'none'
+        segundaTela.style.display = 'none'
         if (pontuacaoUsuario>pontuacaoPC) {
             telafinal.appendChild(h2fim).innerHTML += '<br>Parabéns você nos venceu'
         }else
