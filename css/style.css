@@ -21,6 +21,8 @@
 
 html{
     min-height: 100vh;
+    max-width: 100vw;
+    overflow: hidden;
 }
 /* ----------inicio da primeira tela--------------- */
 
